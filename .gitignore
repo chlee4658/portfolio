@@ -1,0 +1,10 @@
+.DS_Store
+node_modules/
+dist/
+screenshots/
+tmp/
+career_profile.md
+docs/resume_context.md
+resumes/*.md
+resumes/*.docx
+tools/
