@@ -15,6 +15,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script>
+      if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+      window.addEventListener("pageshow", () => window.scrollTo(0, 0));
+    </script>
   </head>
   <body>
     <header class="site-header" aria-label="Primary navigation">
