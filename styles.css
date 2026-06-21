@@ -795,36 +795,6 @@ h1 span,
   line-height: 1.6;
 }
 
-.stack-section {
-  background: #fff;
-}
-
-.stack-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1px;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--line);
-}
-
-.stack-grid div {
-  min-height: 0;
-  padding: 22px;
-  background: #fff;
-}
-
-.stack-grid strong {
-  font-size: 20px;
-}
-
-.stack-grid p {
-  margin: 14px 0 0;
-  color: var(--muted);
-  line-height: 1.55;
-}
-
 .resume-section {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.9fr);
@@ -888,7 +858,6 @@ h1 span,
 @media (max-width: 1060px) {
   .identity-band,
   .project-grid,
-  .stack-grid,
   .value-grid,
   .case-grid,
   .journey-strip {
@@ -989,7 +958,6 @@ h1 span,
 
   .identity-band,
   .project-grid,
-  .stack-grid,
   .value-grid,
   .journey-strip {
     grid-template-columns: 1fr;
