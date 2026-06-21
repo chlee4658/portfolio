@@ -65,7 +65,7 @@ a {
   position: relative;
   display: grid;
   align-items: end;
-  min-height: 88vh;
+  min-height: 68vh;
   overflow: hidden;
   color: #fff;
 }
@@ -92,7 +92,7 @@ a {
   position: relative;
   width: auto;
   max-width: min(920px, calc(100% - 40px));
-  margin: 0 clamp(20px, 5vw, 72px) 12vh;
+  margin: 0 clamp(20px, 5vw, 72px) 8vh;
 }
 
 .eyebrow {
@@ -932,12 +932,12 @@ h1 span,
   }
 
   .hero {
-    min-height: 86vh;
+    min-height: 76vh;
   }
 
   .hero-content {
     max-width: min(340px, calc(100% - 48px));
-    margin-bottom: 9vh;
+    margin-bottom: 7vh;
   }
 
   h1 {
