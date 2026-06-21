@@ -2,17 +2,21 @@
 
 ## Public Summary
 
-Recruiter-facing summary of a healthcare workflow product project. It avoids patient data, credentials, and private clinic details.
+Recruiter-facing summary of a healthcare workflow project. It avoids patient data, credentials, private clinic details, and internal business information.
 
-## Role
+## Problem
 
-Founder, Product Owner, System Architect, and Workflow Designer.
+Clinic charting, clinical photos, visit notes, consent documents, product/payment context, and operational records were fragmented across disconnected workflows.
 
-## Purpose
+## Why It Mattered
 
-SkincareChart is a local-first clinic charting and workflow platform designed for aesthetic clinic operations. It replaces fragmented paper records, spreadsheets, image folders, and disconnected workflows with one integrated clinic platform.
+As a physician and clinic operator, I needed documentation to reflect the real sequence of a clinic visit. The workflow was not only about entering data; it involved clinical context, visual records, patient-facing documents, staff handoffs, and operational follow-up.
 
-## Functional Scope
+## Design Decision
+
+I designed SkincareChart as a local-first charting and workflow system centered around the patient record. The architecture prioritized structured visit context, privacy-sensitive file handling, and a practical interface for daily clinic use.
+
+## What I Built
 
 - Patient profile management
 - Visit documentation and visit history
@@ -22,20 +26,20 @@ SkincareChart is a local-first clinic charting and workflow platform designed fo
 - Product and payment tracking
 - Statistics and operational reporting
 - Role-based access and admin/staff controls
-- Local-first architecture for privacy-sensitive clinic files
+- Local-first handling for privacy-sensitive clinic files
 
-## Technology
+## Technologies Used
 
 Python, Flask, SQLite, HTML, CSS, JavaScript, Git, GitHub.
+
+## What I Learned
+
+Clinical software has to match the order of work. Building the charting layer clarified that documentation was only one part of the operational loop; appointment communication and follow-up workflows still needed their own system design.
+
+## How It Led to the Next Project
+
+SkincareChart exposed the next workflow gap: appointment reminders, patient communication, cancellations, replies, and staff confirmation steps were still handled outside the charting workflow. That led to Skmsg.
 
 ## Career Relevance
 
 SkincareChart demonstrates clinical workflow analysis, structured documentation design, healthcare operations knowledge, local-first data handling, and hands-on healthcare software development.
-
-## Supported Claims
-
-- Standardized clinic documentation
-- Reduced duplicate workflow steps
-- Improved information retrieval
-- Increased workflow consistency
-- Prepared for commercial deployment

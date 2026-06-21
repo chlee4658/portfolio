@@ -44,9 +44,10 @@
             <span>Lee</span>
           </h1>
           <p class="hero-copy">
-            Physician and Clinical Informatics practitioner building real clinic workflow
-            automation and healthcare technology products across documentation, scheduling,
-            messaging, staff operations, and commercial-ready clinic software.
+            Physician and Clinical Informatics practitioner who turns real clinic workflow
+            problems into implemented healthcare software. My portfolio follows an iterative
+            path from charting and documentation to messaging automation and staff-facing
+            operational tools.
           </p>
           <div class="hero-actions" aria-label="Portfolio actions">
             <a class="primary-action" href="resumes/Chaehyeok_Lee_Resume.pdf">Download Resume PDF</a>
@@ -81,15 +82,15 @@
       <section class="section summary-section">
         <div class="section-heading">
           <p class="eyebrow">Recruiter Summary</p>
-          <h2>Clinical operator who builds the systems clinicians actually need.</h2>
+          <h2>Clinical operator who designs and implements systems from inside the workflow.</h2>
         </div>
         <div class="summary-grid">
           <div class="summary-main">
             <p>
-              My career combines pediatric clinical practice, clinic ownership, EMR workflow experience,
-              and hands-on healthcare software development. I focus on practical tools that improve
-              clinical documentation, patient communication, operational consistency, and technology
-              adoption for small- to medium-sized healthcare organizations.
+              My career combines pediatric clinical practice, clinic ownership, EMR workflow
+              experience, and hands-on healthcare software development. I start from workflow
+              friction I have seen directly, then design, implement, deploy, and iterate on
+              systems that make the clinical process more structured.
             </p>
             <p>
               Current target roles include Clinical Informatics Specialist, Clinical Applications Analyst,
@@ -123,7 +124,11 @@
       <section id="projects" class="section projects-section">
         <div class="section-heading">
           <p class="eyebrow">Featured Projects</p>
-          <h2>Clinic workflow systems built from real operational needs.</h2>
+          <h2>An iterative clinical informatics journey.</h2>
+          <p>
+            These projects are presented as evidence of problem solving, software design,
+            implementation, and learning across connected clinic workflows.
+          </p>
         </div>
         <div class="project-grid">
           <article class="project-card chart-card">
@@ -142,10 +147,12 @@
               <h3>SkincareChart</h3>
               <dl class="project-facts">
                 <div><dt>Problem</dt><dd>Clinic records, photos, consent documents, payment details, and visit notes were fragmented across disconnected workflows.</dd></div>
-                <div><dt>Solution</dt><dd>Local-first charting platform for patient profiles, visits, treatment notes, photos, documents, payments, roles, and statistics.</dd></div>
-                <div><dt>My Role</dt><dd>Founder, product owner, system architect, and workflow designer.</dd></div>
-                <div><dt>Technologies</dt><dd>Python, Flask, SQLite, HTML, CSS, JavaScript, Git.</dd></div>
-                <div><dt>Business Impact</dt><dd>Standardized documentation, reduced duplicate work, improved retrieval, and prepared for commercial clinic deployment.</dd></div>
+                <div><dt>Why it mattered</dt><dd>As a physician and clinic operator, I needed charting to reflect how visits, images, forms, products, and payments actually move through a clinic day.</dd></div>
+                <div><dt>Design decision</dt><dd>I chose a local-first architecture and patient-centered data model so privacy-sensitive files and visit context could stay organized together.</dd></div>
+                <div><dt>What I built</dt><dd>A clinic charting platform for patient profiles, visits, treatment notes, clinical photos, consent documents, payments, roles, and reporting.</dd></div>
+                <div><dt>Technologies used</dt><dd>Python, Flask, SQLite, HTML, CSS, JavaScript, Git.</dd></div>
+                <div><dt>What I learned</dt><dd>Clinical software has to fit the order of work, not just store data. The first system revealed communication gaps around appointments and follow-up.</dd></div>
+                <div><dt>How it led to the next project</dt><dd>Once charting was structured, appointment reminders and patient communication became the next visible workflow problem.</dd></div>
               </dl>
               <a class="text-link" href="docs/projects/skincarechart.md">Read project notes</a>
             </div>
@@ -165,10 +172,12 @@
               <h3>Skmsg</h3>
               <dl class="project-facts">
                 <div><dt>Problem</dt><dd>Appointment communication required repeated manual work across scheduling, reminders, cancellations, and replies.</dd></div>
-                <div><dt>Solution</dt><dd>Messaging automation layer connected to appointment data, templates, inbound replies, and staff confirmation workflows.</dd></div>
-                <div><dt>My Role</dt><dd>Product builder, workflow designer, backend developer, and deployment operator.</dd></div>
-                <div><dt>Technologies</dt><dd>Python, Flask, SQLAlchemy, SQLite/PostgreSQL, Railway, Twilio API, Google Calendar API.</dd></div>
-                <div><dt>Business Impact</dt><dd>Reduced manual appointment communication and centralized messaging workflows for clinic operations.</dd></div>
+                <div><dt>Why it mattered</dt><dd>After building charting workflows, I saw that scheduling data and communication workflows still lived in separate operational spaces.</dd></div>
+                <div><dt>Design decision</dt><dd>I integrated calendar events, approved message templates, delivery APIs, inbound replies, and staff confirmation steps into one controlled messaging layer.</dd></div>
+                <div><dt>What I built</dt><dd>A messaging automation service for appointment reminders, confirmations, cancellation/rescheduling templates, inbound webhook handling, and contact synchronization.</dd></div>
+                <div><dt>Technologies used</dt><dd>Python, Flask, SQLAlchemy, SQLite/PostgreSQL, Railway, Twilio API, Google Calendar API, Telegram Bot API.</dd></div>
+                <div><dt>What I learned</dt><dd>Automation in healthcare needs guardrails, templates, logging, and deployment discipline as much as working API integrations.</dd></div>
+                <div><dt>How it led to the next project</dt><dd>Once messaging was automated, staff needed a faster way to look up context and trigger approved actions during daily operations.</dd></div>
               </dl>
               <a class="text-link" href="docs/projects/skmsg.md">Read project notes</a>
             </div>
@@ -187,10 +196,12 @@
               <h3>Telegram CRM Bridge</h3>
               <dl class="project-facts">
                 <div><dt>Problem</dt><dd>Staff needed quick operational lookup and controlled messaging without unsafe free-form write actions.</dd></div>
-                <div><dt>Solution</dt><dd>Telegram assistant for customer lookup, booking lookup, approved-template messaging, confirmations, audit logs, and feature flags.</dd></div>
-                <div><dt>My Role</dt><dd>Workflow designer, TypeScript developer, safety-control designer, and rollout planner.</dd></div>
-                <div><dt>Technologies</dt><dd>Node.js, TypeScript, Telegram Bot API, HTTP webhooks, feature flags, automated tests.</dd></div>
-                <div><dt>Business Impact</dt><dd>Provided a controlled staff messaging interface while protecting operational integrity.</dd></div>
+                <div><dt>Why it mattered</dt><dd>Operational systems only work if staff can use them quickly without bypassing safety controls or exposing sensitive information.</dd></div>
+                <div><dt>Design decision</dt><dd>I separated lookup actions from write actions and added approved templates, confirmation gates, audit logs, feature flags, and reversible rollout controls.</dd></div>
+                <div><dt>What I built</dt><dd>A Telegram-based staff interface for customer lookup, booking lookup, approved-template messaging, confirmations, and controlled workflow execution.</dd></div>
+                <div><dt>Technologies used</dt><dd>Node.js, TypeScript, Telegram Bot API, HTTP webhooks, feature flags, automated tests.</dd></div>
+                <div><dt>What I learned</dt><dd>Staff-facing automation requires careful permission boundaries, predictable interaction patterns, and operational fallback paths.</dd></div>
+                <div><dt>How it led to the next project</dt><dd>This completed the first loop from documentation to communication to staff operations, and shaped my next focus on safer healthcare automation patterns.</dd></div>
               </dl>
               <a class="text-link" href="docs/projects/telegram-crm-bridge.md">Read project notes</a>
             </div>
@@ -201,23 +212,23 @@
       <section id="case-studies" class="section case-section">
         <div class="section-heading">
           <p class="eyebrow">Case Studies</p>
-          <h2>From clinical workflow problems to working healthcare software.</h2>
+          <h2>What each iteration taught me about healthcare software.</h2>
         </div>
         <div class="case-grid">
           <article>
             <span>Case 01</span>
-            <h3>Local-first charting for privacy-sensitive clinic records</h3>
-            <p>SkincareChart organizes visit documentation, treatment notes, clinical photos, consent documents, product/payment data, and operational statistics around the patient record.</p>
+            <h3>From fragmented documentation to a patient-centered workflow</h3>
+            <p>SkincareChart began with a clinical documentation problem: visit notes, images, forms, and payment context needed to be designed around the way care was actually delivered.</p>
           </article>
           <article>
             <span>Case 02</span>
-            <h3>Appointment communication automation</h3>
-            <p>Skmsg connects scheduling data, approved templates, SMS/MMS delivery, inbound replies, and staff confirmation workflows to reduce repetitive communication work.</p>
+            <h3>From charting workflows to communication workflows</h3>
+            <p>Skmsg grew out of daily appointment coordination gaps. I integrated scheduling data, message templates, delivery APIs, inbound replies, and confirmation steps.</p>
           </article>
           <article>
             <span>Case 03</span>
-            <h3>Safe staff-facing assistant workflows</h3>
-            <p>Telegram CRM Bridge uses lookup actions, approved message templates, confirmation gates, audit logging, and reversible rollout controls for operational safety.</p>
+            <h3>From automation to controlled staff operations</h3>
+            <p>Telegram CRM Bridge focused on how staff interact with operational systems: fast lookup, approved messaging, confirmation gates, audit behavior, and reversible rollout controls.</p>
           </article>
         </div>
       </section>
@@ -225,30 +236,30 @@
       <section id="architecture" class="section architecture-section">
         <div class="section-heading">
           <p class="eyebrow">Architecture / Workflow</p>
-          <h2>A modular clinic workflow system with clear service boundaries.</h2>
+          <h2>A workflow journey from clinical observation to implemented systems.</h2>
         </div>
         <div class="workflow-map" aria-label="Healthcare workflow architecture">
           <div>
-            <strong>Charting Source</strong>
-            <p>SkincareChart manages local patient records, visit notes, photos, documents, products, payments, and statistics.</p>
+            <strong>Clinical Problem</strong>
+            <p>Fragmented charting, visit documentation, clinical photos, consent documents, and payment context.</p>
           </div>
           <span></span>
           <div>
-            <strong>Messaging Layer</strong>
-            <p>Skmsg handles appointment messages, reminders, inbound replies, contact sync, Twilio, Google Calendar, and Railway/PostgreSQL deployment.</p>
+            <strong>Implemented System</strong>
+            <p>SkincareChart structured the core documentation workflow and exposed the next gap: appointment communication.</p>
           </div>
           <span></span>
           <div>
-            <strong>Staff Assistant</strong>
-            <p>Telegram CRM Bridge gives staff controlled lookup and approved messaging actions with confirmation and audit controls.</p>
+            <strong>Iterated Workflow</strong>
+            <p>Skmsg automated communication, then Telegram CRM Bridge added a controlled staff interface for lookup and approved actions.</p>
           </div>
         </div>
       </section>
 
       <section class="section value-section">
         <div class="section-heading">
-          <p class="eyebrow">How I Create Value</p>
-          <h2>Turning clinic workflow friction into usable, safer operational systems.</h2>
+          <p class="eyebrow">Capability</p>
+          <h2>Physician experience translated into healthcare technology implementation.</h2>
         </div>
         <div class="value-grid">
           <article>
@@ -261,7 +272,7 @@
           </article>
           <article>
             <strong>Hands-On Implementation</strong>
-            <p>I build and operate working systems using Python, Flask, SQLite/PostgreSQL, JavaScript/TypeScript, Twilio, Google Calendar, Telegram, Git, and AI-assisted development.</p>
+            <p>I design, implement, integrate, refactor, deploy, and document working systems using Python, Flask, SQLite/PostgreSQL, JavaScript/TypeScript, Twilio, Google Calendar, Telegram, Git, and AI-assisted development.</p>
           </article>
         </div>
       </section>

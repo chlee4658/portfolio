@@ -1,6 +1,6 @@
-# Chaehyeok Lee Healthcare Technology Portfolio
+# Chaehyeok Lee Clinical Informatics Portfolio
 
-Public recruiter-facing portfolio for **Chaehyeok Lee**, a physician and Clinical Informatics practitioner building real clinic workflow automation and healthcare technology products.
+Public recruiter-facing career portfolio for **Chaehyeok Lee**, a physician and Clinical Informatics practitioner who designs and implements healthcare workflow automation from real clinic problems.
 
 ## Portfolio
 
@@ -39,6 +39,18 @@ Then open `http://localhost:4173`.
 └── README.md
 ```
 
+## Portfolio Story
+
+The site presents an iterative healthcare technology journey:
+
+1. Real clinical workflow problems revealed fragmented charting, photos, payments, and clinic documentation.
+2. **SkincareChart** was built to structure charting and documentation workflows.
+3. Use of that system revealed communication and reminder workflow gaps.
+4. **Skmsg** was built to automate appointment messaging and patient communication workflows.
+5. Daily operations then revealed the need for a faster staff-facing interface.
+6. **Telegram CRM Bridge** was built for controlled staff lookup and approved message workflows.
+7. Together, the projects show physician experience translated into clinical informatics, software design, implementation, deployment, and iteration.
+
 ## Featured Projects
 
 - **SkincareChart** - Local-first clinic charting and workflow platform.
@@ -48,10 +60,12 @@ Then open `http://localhost:4173`.
 Each project is presented using a recruiter-friendly structure:
 
 - Problem
-- Solution
-- My Role
-- Technologies
-- Business Impact
+- Why it mattered
+- Design decision
+- What I built
+- Technologies used
+- What I learned
+- How it led to the next project
 
 ## Privacy Note
 
