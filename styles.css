@@ -291,7 +291,7 @@ h1 span,
 .project-card {
   display: grid;
   grid-template-rows: 210px 1fr;
-  min-height: 780px;
+  min-height: 590px;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -528,7 +528,7 @@ h1 span,
 
 .project-facts {
   display: grid;
-  gap: 14px;
+  gap: 12px;
   margin: 18px 0 0;
 }
 
@@ -547,7 +547,29 @@ h1 span,
 .project-facts dd {
   margin: 6px 0 0;
   color: var(--muted);
-  line-height: 1.55;
+  line-height: 1.48;
+}
+
+.project-details {
+  margin-top: 18px;
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+}
+
+.project-details summary {
+  cursor: pointer;
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.project-details summary::marker {
+  color: var(--coral);
+}
+
+.detail-list {
+  margin-top: 12px;
 }
 
 .project-body ul {
@@ -594,7 +616,7 @@ h1 span,
 }
 
 .case-grid article {
-  min-height: 300px;
+  min-height: 230px;
   border: 1px solid var(--line);
   border-radius: 8px;
   padding: 30px;
@@ -635,7 +657,7 @@ h1 span,
 }
 
 .workflow-map div {
-  min-height: 250px;
+  min-height: 210px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 8px;
   padding: 28px;
