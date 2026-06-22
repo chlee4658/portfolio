@@ -855,6 +855,90 @@ h1 {
   background: var(--paper);
 }
 
+.case-study-page {
+  background: #fff;
+}
+
+.case-header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px clamp(20px, 5vw, 72px);
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(12px);
+}
+
+.case-header a {
+  color: var(--charcoal);
+  font-weight: 800;
+}
+
+.case-header nav {
+  display: flex;
+  gap: 20px;
+}
+
+.case-study {
+  max-width: 920px;
+  padding: clamp(48px, 7vw, 88px) clamp(20px, 5vw, 72px);
+}
+
+.case-study h1 {
+  max-width: none;
+  color: var(--charcoal);
+  font-size: clamp(44px, 7vw, 86px);
+  white-space: normal;
+}
+
+.case-lede {
+  max-width: 780px;
+  margin: 20px 0 34px;
+  color: var(--charcoal);
+  font-size: clamp(20px, 2.4vw, 28px);
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+.case-study section {
+  border-top: 1px solid var(--line);
+  padding: 24px 0;
+}
+
+.case-study h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.case-study p,
+.case-study li {
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.case-study ul {
+  margin: 14px 0 0;
+  padding-left: 20px;
+}
+
+.next-case {
+  background: var(--paper);
+  margin-top: 10px;
+  padding: 24px !important;
+  border: 1px solid var(--line) !important;
+  border-radius: 8px;
+}
+
+.next-case a {
+  display: inline-flex;
+  margin-top: 10px;
+  color: var(--teal);
+  font-weight: 800;
+}
+
 @media (max-width: 1060px) {
   .identity-band,
   .project-grid,
@@ -929,6 +1013,12 @@ h1 {
 
   .nav-links {
     display: none;
+  }
+
+  .case-header,
+  .case-header nav {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .hero {

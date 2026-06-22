@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skmsg Case Study | Chaehyeok Lee</title>
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body class="case-study-page">
+    <header class="case-header">
+      <a href="../../index.html#projects">Back to Portfolio</a>
+      <nav>
+        <a href="#problem">Problem</a>
+        <a href="#build">Build</a>
+        <a href="#learning">Learning</a>
+      </nav>
+    </header>
+    <main class="case-study">
+      <p class="eyebrow">Stage 02 / Communication Layer</p>
+      <h1>Skmsg</h1>
+      <p class="case-lede">
+        Messaging automation built after SkincareChart exposed appointment communication
+        and follow-up bottlenecks.
+      </p>
+
+      <section id="problem">
+        <h2>Problem</h2>
+        <p>Appointment communication remained separate from scheduling and staff operations, including reminders, cancellations, rescheduling, replies, and notifications.</p>
+      </section>
+
+      <section>
+        <h2>Why It Mattered</h2>
+        <p>Patient communication sits between clinical care and operations. Without connected scheduling data, templates, replies, and confirmations, the workflow depended on manual handoffs.</p>
+      </section>
+
+      <section>
+        <h2>Design Decision</h2>
+        <p>I designed Skmsg as a controlled messaging layer connected to appointment data, approved templates, inbound replies, and staff confirmation workflows.</p>
+      </section>
+
+      <section id="build">
+        <h2>What I Built</h2>
+        <ul>
+          <li>Twilio SMS/MMS sending and incoming webhook handling</li>
+          <li>Google Calendar appointment integration</li>
+          <li>Reminder, confirmation, cancellation, and rescheduling templates</li>
+          <li>Contact synchronization and selected Telegram confirmation flows</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Technologies Used</h2>
+        <p>Python, Flask, SQLAlchemy, SQLite, PostgreSQL, Railway, Twilio API, Google Calendar API, Telegram Bot API, Cloudflare/DNS.</p>
+      </section>
+
+      <section id="learning">
+        <h2>What I Learned</h2>
+        <p>Healthcare automation needs guardrails, confirmation steps, deployment discipline, templates, logging, and failure handling.</p>
+      </section>
+
+      <section class="next-case">
+        <h2>Next Problem Discovered</h2>
+        <p>Staff needed faster operational access, which led to Telegram CRM Bridge.</p>
+        <a href="telegram-crm-bridge.html">Next case study</a>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telegram CRM Bridge Case Study | Chaehyeok Lee</title>
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body class="case-study-page">
+    <header class="case-header">
+      <a href="../../index.html#projects">Back to Portfolio</a>
+      <nav>
+        <a href="#problem">Problem</a>
+        <a href="#build">Build</a>
+        <a href="#learning">Learning</a>
+      </nav>
+    </header>
+    <main class="case-study">
+      <p class="eyebrow">Stage 03 / Staff Operations Layer</p>
+      <h1>Telegram CRM Bridge</h1>
+      <p class="case-lede">
+        Staff-facing operations layer built after charting and messaging exposed the need for
+        faster lookup and controlled actions.
+      </p>
+
+      <section id="problem">
+        <h2>Problem</h2>
+        <p>Staff needed faster operational lookup and approved communication actions without unsafe free-form write access.</p>
+      </section>
+
+      <section>
+        <h2>Why It Mattered</h2>
+        <p>Staff-facing automation has to be quick, predictable, controlled, and privacy-conscious during daily operations.</p>
+      </section>
+
+      <section>
+        <h2>Design Decision</h2>
+        <p>I separated lookup actions from write actions and added approved templates, confirmation gates, audit behavior, feature flags, and reversible rollout controls.</p>
+      </section>
+
+      <section id="build">
+        <h2>What I Built</h2>
+        <ul>
+          <li>Telegram Bot API webhook service</li>
+          <li>Customer and booking lookup</li>
+          <li>Approved template message preview and send flow</li>
+          <li>Confirmation gates, audit logging, feature flags, and legacy command compatibility</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Technologies Used</h2>
+        <p>Node.js, TypeScript, Telegram Bot API, HTTP webhook service, feature flags, JSON action schemas, allowlisted actions, automated tests, Mac mini LaunchAgent.</p>
+      </section>
+
+      <section id="learning">
+        <h2>What I Learned</h2>
+        <p>Operational interfaces need clear boundaries, predictable interaction patterns, fallback paths, and rollout controls.</p>
+      </section>
+
+      <section class="next-case">
+        <h2>Current Direction</h2>
+        <p>This continues the evolution toward one integrated healthcare workflow platform.</p>
+        <a href="../../index.html#projects">Back to projects</a>
+      </section>
+    </main>
+  </body>
+</html>
