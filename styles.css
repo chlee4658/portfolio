@@ -215,8 +215,7 @@ h1 {
   margin-bottom: 20px;
 }
 
-.section-heading h2,
-.resume-section h2 {
+.section-heading h2 {
   margin: 0;
   font-size: clamp(31px, 5vw, 56px);
   line-height: 1.08;
@@ -628,43 +627,6 @@ h1 {
   background: var(--paper);
 }
 
-.architecture-section {
-  color: #fff;
-  background: var(--charcoal);
-}
-
-.workflow-map {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 44px minmax(0, 1fr) 44px minmax(0, 1fr);
-  align-items: stretch;
-  gap: 0;
-}
-
-.workflow-map div {
-  min-height: 0;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 8px;
-  padding: 24px;
-  background: rgba(255, 255, 255, 0.08);
-}
-
-.workflow-map > span {
-  align-self: center;
-  height: 2px;
-  background: var(--yellow);
-}
-
-.workflow-map strong {
-  display: block;
-  font-size: 22px;
-}
-
-.workflow-map p {
-  margin: 12px 0 0;
-  color: rgba(255, 255, 255, 0.78);
-  line-height: 1.65;
-}
-
 .timeline {
   display: grid;
   gap: 1px;
@@ -699,33 +661,6 @@ h1 {
   margin: -8px 0 0;
   color: var(--muted);
   line-height: 1.6;
-}
-
-.resume-section {
-  display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.9fr);
-  gap: 40px;
-  align-items: start;
-  padding: clamp(42px, 5.5vw, 72px) clamp(20px, 5vw, 72px);
-  color: #fff;
-  background: var(--charcoal);
-}
-
-.resume-links {
-  display: grid;
-  gap: 10px;
-}
-
-.resume-links a {
-  display: flex;
-  align-items: center;
-  min-height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  border-radius: 6px;
-  padding: 0 16px;
-  color: #fff;
-  font-weight: 800;
-  background: rgba(255, 255, 255, 0.08);
 }
 
 .contact-section {
@@ -965,7 +900,6 @@ h1 {
   }
 
   .summary-grid,
-  .resume-section,
   .contact-section {
     grid-template-columns: 1fr;
   }
@@ -980,20 +914,9 @@ h1 {
     margin: 0;
   }
 
-  .workflow-map {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-
   .case-flow,
   .case-grid-detail {
     grid-template-columns: 1fr;
-  }
-
-  .workflow-map > span {
-    width: 2px;
-    height: 24px;
-    justify-self: center;
   }
 }
 
