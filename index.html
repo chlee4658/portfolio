@@ -25,7 +25,6 @@
       <a class="brand" href="#top" aria-label="Chaehyeok Lee portfolio home">Chaehyeok Lee</a>
       <nav class="nav-links">
         <a href="#projects">Projects</a>
-        <a href="#case-studies">Case Studies</a>
         <a href="#architecture">Workflow</a>
         <a href="#experience">Experience</a>
         <a href="#resumes">Resumes</a>
@@ -173,15 +172,6 @@
                 <div><dt>Next discovered</dt><dd>Communication bottleneck led to Skmsg.</dd></div>
                 <div><dt>Stack</dt><dd>Python, Flask, SQLite, HTML, CSS, JavaScript, Git.</dd></div>
               </dl>
-              <details class="project-details">
-                <summary>Journey notes</summary>
-                <dl class="project-facts detail-list">
-                  <div><dt>Why it mattered</dt><dd>As a physician and clinic operator, I needed charting to reflect how clinic visits actually move.</dd></div>
-                  <div><dt>Design decision</dt><dd>I chose a local-first architecture and patient-centered data model for privacy-sensitive clinic context.</dd></div>
-                  <div><dt>What I learned</dt><dd>Clinical software has to fit the order of work. This exposed communication gaps around appointments and follow-up.</dd></div>
-                  <div><dt>How it led to the next project</dt><dd>Structured charting made appointment communication the next visible workflow problem.</dd></div>
-                </dl>
-              </details>
               <a class="text-link" href="docs/projects/skincarechart.html">Read case study</a>
             </div>
           </article>
@@ -204,15 +194,6 @@
                 <div><dt>Next discovered</dt><dd>Staff access bottleneck led to Telegram CRM.</dd></div>
                 <div><dt>Stack</dt><dd>Python, Flask, SQLAlchemy, PostgreSQL, Railway, Twilio, Google Calendar.</dd></div>
               </dl>
-              <details class="project-details">
-                <summary>Journey notes</summary>
-                <dl class="project-facts detail-list">
-                  <div><dt>Why it mattered</dt><dd>Communication sits between clinical care and operations, so manual handoffs created workflow risk.</dd></div>
-                  <div><dt>Design decision</dt><dd>I integrated calendar events, approved templates, delivery APIs, inbound replies, and confirmation steps.</dd></div>
-                  <div><dt>What I learned</dt><dd>Healthcare automation needs guardrails, deployment discipline, templates, and logging.</dd></div>
-                  <div><dt>How it led to the next project</dt><dd>Automated messaging created the need for a faster staff-facing operational interface.</dd></div>
-                </dl>
-              </details>
               <a class="text-link" href="docs/projects/skmsg.html">Read case study</a>
             </div>
           </article>
@@ -234,41 +215,8 @@
                 <div><dt>Next discovered</dt><dd>Continues toward one integrated platform.</dd></div>
                 <div><dt>Stack</dt><dd>Node.js, TypeScript, Telegram Bot API, webhooks, feature flags.</dd></div>
               </dl>
-              <details class="project-details">
-                <summary>Journey notes</summary>
-                <dl class="project-facts detail-list">
-                  <div><dt>Why it mattered</dt><dd>Staff tools must be quick while preserving permission boundaries and privacy-conscious logging.</dd></div>
-                  <div><dt>Design decision</dt><dd>I separated lookup from write actions and added confirmations, audit behavior, and reversible rollout controls.</dd></div>
-                  <div><dt>What I learned</dt><dd>Staff-facing automation needs predictable interactions, fallback paths, and clear operational boundaries.</dd></div>
-                  <div><dt>How it led forward</dt><dd>This completed the first loop from documentation to communication to staff operations.</dd></div>
-                </dl>
-              </details>
               <a class="text-link" href="docs/projects/telegram-crm-bridge.html">Read case study</a>
             </div>
-          </article>
-        </div>
-      </section>
-
-      <section id="case-studies" class="section case-section">
-        <div class="section-heading">
-          <p class="eyebrow">Case Studies</p>
-          <h2>Three connected workflow lessons.</h2>
-        </div>
-        <div class="case-grid">
-          <article>
-            <span>Case 01</span>
-            <h3>Documentation</h3>
-            <p>Fragmented records require workflow-centered data design.</p>
-          </article>
-          <article>
-            <span>Case 02</span>
-            <h3>Communication</h3>
-            <p>Automation needs templates, integrations, and confirmation steps.</p>
-          </article>
-          <article>
-            <span>Case 03</span>
-            <h3>Staff Operations</h3>
-            <p>Staff tools need boundaries, audit behavior, and rollout controls.</p>
           </article>
         </div>
       </section>
@@ -276,7 +224,7 @@
       <section id="architecture" class="section architecture-section">
         <div class="section-heading">
           <p class="eyebrow">Architecture / Workflow</p>
-          <h2>Clinical observation to implemented systems.</h2>
+          <h2>Clinical observation to continuous improvement.</h2>
         </div>
         <div class="workflow-map" aria-label="Healthcare workflow architecture">
           <div>
@@ -293,27 +241,6 @@
             <strong>Iterated Workflow</strong>
             <p>Skmsg and Telegram CRM Bridge extended the workflow.</p>
           </div>
-        </div>
-      </section>
-
-      <section class="section value-section">
-        <div class="section-heading">
-          <p class="eyebrow">Capability</p>
-          <h2>Healthcare technology capability.</h2>
-        </div>
-        <div class="value-grid">
-          <article>
-            <strong>Clinical Translation</strong>
-            <p>Clinical documentation, communication, handoffs, follow-up.</p>
-          </article>
-          <article>
-            <strong>Workflow Design</strong>
-            <p>EMR, scheduling, messaging, photo, and reporting workflows.</p>
-          </article>
-          <article>
-            <strong>Hands-On Implementation</strong>
-            <p>Design, implementation, integration, refactoring, deployment.</p>
-          </article>
         </div>
       </section>
 
