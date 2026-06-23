@@ -34,6 +34,8 @@ Then open `http://localhost:4173`.
 │       └── telegram-crm-bridge.md
 ├── resumes/
 │   └── Chaehyeok_Lee_Resume.pdf
+├── development-log.html
+├── resume.html
 ├── index.html
 ├── styles.css
 └── README.md
