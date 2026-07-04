@@ -560,6 +560,12 @@ h1 {
   padding: 22px;
 }
 
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
 .project-kicker {
   margin: 0 0 10px;
   color: var(--teal);
@@ -782,7 +788,8 @@ h1 {
   margin-top: 22px;
 }
 
-.case-meta span {
+.case-meta span,
+.case-meta a {
   border: 1px solid var(--line);
   border-radius: 999px;
   padding: 8px 11px;
@@ -790,6 +797,10 @@ h1 {
   font-size: 12px;
   font-weight: 800;
   background: var(--paper);
+}
+
+.case-meta a {
+  color: var(--teal);
 }
 
 .case-flow,
@@ -827,6 +838,19 @@ h1 {
 
 .case-grid-detail {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.case-image-card {
+  grid-column: span 2;
+}
+
+.case-screenshot {
+  display: block;
+  width: 100%;
+  margin: 18px 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
 }
 
 .dev-log-group {
@@ -982,6 +1006,10 @@ h1 {
   .dev-log-grid,
   .resume-web {
     grid-template-columns: 1fr;
+  }
+
+  .case-image-card {
+    grid-column: auto;
   }
 }
 
