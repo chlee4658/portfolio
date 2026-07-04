@@ -6,10 +6,11 @@ Public recruiter-facing career portfolio for **Chaehyeok Lee**, a physician and 
 
 This is a static portfolio site with sections for:
 
-- Featured Projects
-- Case Studies
-- Architecture / Workflow
-- Technical Stack
+- Professional identity
+- Platform evolution
+- Featured projects
+- HTML case studies
+- Career timeline
 - Resume
 - Contact
 
@@ -26,11 +27,15 @@ Then open `http://localhost:4173`.
 ```text
 .
 ├── assets/
-│   └── skincarechart-hero.png
+│   ├── skincarechart-hero.png
+│   └── skchart-landing.png
 ├── docs/
 │   └── projects/
+│       ├── skincarechart.html
 │       ├── skincarechart.md
+│       ├── skmsg.html
 │       ├── skmsg.md
+│       ├── telegram-crm-bridge.html
 │       └── telegram-crm-bridge.md
 ├── resumes/
 │   └── Chaehyeok_Lee_Resume.pdf
@@ -46,7 +51,7 @@ Then open `http://localhost:4173`.
 The site presents an iterative healthcare technology journey:
 
 1. Real clinical workflow problems revealed fragmented charting, photos, payments, and clinic documentation.
-2. **SkincareChart** was built to structure charting and documentation workflows.
+2. **SkincareChart** was built to structure charting and documentation workflows, then presented publicly through skchart.com for early validation.
 3. Use of that system revealed communication and reminder workflow gaps.
 4. **Skmsg** was built to automate appointment messaging and patient communication workflows.
 5. Daily operations then revealed the need for a faster staff-facing interface.
@@ -55,7 +60,7 @@ The site presents an iterative healthcare technology journey:
 
 ## Featured Projects
 
-- **SkincareChart** - Local-first clinic charting and workflow platform.
+- **SkincareChart** - Local-first clinic charting and workflow platform with a public landing page at [skchart.com](https://skchart.com).
 - **Skmsg** - Messaging automation for appointment communication and reminders.
 - **Telegram CRM Bridge** - Staff-facing operational assistant with controlled messaging workflows.
 
