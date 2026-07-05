@@ -7,8 +7,9 @@ Public recruiter-facing career portfolio for **Chaehyeok Lee**, a physician and 
 This is a static portfolio site with sections for:
 
 - Professional identity
+- Portfolio entry cards
 - Platform evolution
-- Featured projects
+- Featured SKChart project
 - HTML case studies
 - Career timeline
 - Resume
@@ -51,16 +52,16 @@ Then open `http://localhost:4173`.
 The site presents an iterative healthcare technology journey:
 
 1. Real clinical workflow problems revealed fragmented charting, photos, payments, and clinic documentation.
-2. **SkincareChart** was built to structure charting and documentation workflows, then presented publicly through skchart.com for early validation.
+2. **SKChart** was built to structure charting and documentation workflows.
 3. Use of that system revealed communication and reminder workflow gaps.
 4. **Skmsg** was built to automate appointment messaging and patient communication workflows.
 5. Daily operations then revealed the need for a faster staff-facing interface.
 6. **Telegram CRM Bridge** was built for controlled staff lookup and approved message workflows.
-7. Together, the projects show physician experience translated into clinical informatics, software design, implementation, deployment, and iteration.
+7. Together, the projects show physician experience translated into Clinical Informatics, workflow analysis, healthcare technology implementation, deployment, and iteration.
 
 ## Featured Projects
 
-- **SkincareChart** - Local-first clinic charting and workflow platform with a public landing page at [skchart.com](https://skchart.com).
+- **SKChart** - Local-first clinical documentation and healthcare workflow platform.
 - **Skmsg** - Messaging automation for appointment communication and reminders.
 - **Telegram CRM Bridge** - Staff-facing operational assistant with controlled messaging workflows.
 

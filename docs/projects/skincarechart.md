@@ -1,12 +1,16 @@
-# SkincareChart
+# SKChart
 
 ## Public Summary
 
-Recruiter-facing summary of a healthcare workflow project. It avoids patient data, credentials, private clinic details, and internal business information.
+Recruiter-facing summary of a Clinical Informatics healthcare workflow project. It avoids patient data, credentials, private clinic details, and internal business information.
 
-Public product landing page: [skchart.com](https://skchart.com)
+SKChart is presented here as a healthcare workflow platform developed from real clinical practice.
 
-## Problem
+## Overview
+
+SKChart was developed from daily clinical practice, long-term EMR use, clinic operations, and fragmented documentation workflows.
+
+## Clinical Problem
 
 Clinic charting, clinical photos, visit notes, consent documents, product/payment context, and operational records were fragmented across disconnected workflows.
 
@@ -29,22 +33,34 @@ I designed SkincareChart as a local-first charting and workflow system centered 
 - Statistics and operational reporting
 - Role-based access and admin/staff controls
 - Local-first handling for privacy-sensitive clinic files
-- Public landing page for early product validation after real workflow use
+
+## Clinical Workflow Impact
+
+- Documentation: keeps visit context, treatment notes, photos, and history connected.
+- Workflow: reduces fragmentation between charting, documents, payments, and operations.
+- Communication: exposed the need for a dedicated messaging workflow, which led to Skmsg.
+- Operations: supports role-based review, reporting, and staff workflow coordination.
 
 ## Technologies Used
 
 Python, Flask, SQLite, HTML, CSS, JavaScript, Git, GitHub.
 
+## Development Log
+
+Structured patient records, visit-based notes, photo annotation, and operational reporting were refined through real workflow observation and use.
+
 ## What I Learned
 
 Clinical software has to match the order of work. Building the charting layer clarified that documentation was only one part of the operational loop; appointment communication and follow-up workflows still needed their own system design.
-
-Launching skchart.com helped turn an internally operated workflow tool into a public-facing product surface without exposing patient data or private clinic details.
 
 ## How It Led to the Next Project
 
 SkincareChart exposed the next workflow gap: appointment reminders, patient communication, cancellations, replies, and staff confirmation steps were still handled outside the charting workflow. That led to Skmsg.
 
+## Future Roadmap
+
+Continue integrating documentation, communication, and staff operations into a connected healthcare workflow platform.
+
 ## Career Relevance
 
-SkincareChart demonstrates clinical workflow analysis, structured documentation design, healthcare operations knowledge, local-first data handling, public product validation, and hands-on healthcare software development.
+SKChart demonstrates clinical workflow analysis, structured documentation design, healthcare operations knowledge, local-first data handling, Clinical Informatics implementation, and hands-on healthcare workflow development.
