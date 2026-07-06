@@ -1,5 +1,6 @@
 :root {
   color-scheme: light;
+  --content-max: 1180px;
   --ink: #151718;
   --muted: #5f6670;
   --line: #d9dee4;
@@ -177,6 +178,8 @@ h1 {
 .identity-band {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  max-width: var(--content-max);
+  margin: 0 auto;
   border-bottom: 1px solid var(--line);
   background: var(--panel);
 }
@@ -212,6 +215,8 @@ h1 {
 }
 
 .section {
+  max-width: var(--content-max);
+  margin: 0 auto;
   padding: clamp(42px, 5.5vw, 72px) clamp(20px, 5vw, 72px);
 }
 
@@ -299,6 +304,8 @@ h1 {
 }
 
 .journey-section {
+  max-width: var(--content-max);
+  margin: 0 auto;
   padding: 0 clamp(20px, 5vw, 72px) clamp(42px, 5.5vw, 72px);
   background: var(--paper);
 }
@@ -680,6 +687,8 @@ h1 {
   grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
   gap: 40px;
   align-items: start;
+  max-width: var(--content-max);
+  margin: 0 auto;
   padding: clamp(42px, 5.5vw, 72px) clamp(20px, 5vw, 72px);
   background: #fff;
 }
