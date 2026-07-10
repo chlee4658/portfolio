@@ -302,24 +302,23 @@ h1 {
 }
 
 .journey-section {
-  padding: clamp(34px, 4.5vw, 58px) var(--page-pad);
+  padding: 24px var(--page-pad);
   background: var(--paper);
 }
 
 .journey-strip {
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--line);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .journey-strip article {
   display: flex;
   align-items: center;
-  min-height: 78px;
-  padding: 16px;
+  min-height: 38px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0 14px;
   background: #fff;
 }
 
@@ -961,8 +960,7 @@ h1 {
 
 @media (max-width: 1060px) {
   .identity-band,
-  .project-grid,
-  .journey-strip {
+  .project-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -1070,8 +1068,7 @@ h1 {
   }
 
   .identity-band,
-  .project-grid,
-  .journey-strip {
+  .project-grid {
     grid-template-columns: 1fr;
   }
 
