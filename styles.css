@@ -302,13 +302,13 @@ h1 {
 }
 
 .journey-section {
-  padding: 0 var(--page-pad) clamp(42px, 5.5vw, 72px);
+  padding: clamp(34px, 4.5vw, 58px) var(--page-pad);
   background: var(--paper);
 }
 
 .journey-strip {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -316,8 +316,10 @@ h1 {
 }
 
 .journey-strip article {
-  min-height: 112px;
-  padding: 18px;
+  display: flex;
+  align-items: center;
+  min-height: 78px;
+  padding: 16px;
   background: #fff;
 }
 
@@ -347,7 +349,7 @@ h1 {
 
 .project-card {
   display: grid;
-  grid-template-rows: 170px auto;
+  grid-template-rows: 138px auto;
   min-height: 0;
   overflow: hidden;
   border: 1px solid var(--line);
@@ -477,7 +479,7 @@ h1 {
 
 .screen-placeholder {
   position: absolute;
-  inset: 22px;
+  inset: 18px;
   display: grid;
   align-content: start;
   gap: 10px;
@@ -560,7 +562,7 @@ h1 {
 .project-body {
   display: flex;
   flex-direction: column;
-  padding: 22px;
+  padding: 20px;
 }
 
 .project-links {
@@ -570,7 +572,7 @@ h1 {
 }
 
 .project-kicker {
-  margin: 0 0 10px;
+  margin: 0 0 8px;
   color: var(--teal);
   font-size: 12px;
   font-weight: 800;
@@ -579,14 +581,14 @@ h1 {
 
 .project-body h3 {
   margin: 0;
-  font-size: 30px;
+  font-size: 26px;
   line-height: 1.1;
 }
 
 .project-body p {
-  margin: 16px 0 0;
+  margin: 14px 0 0;
   color: var(--muted);
-  line-height: 1.65;
+  line-height: 1.55;
 }
 
 .project-facts {
@@ -655,7 +657,7 @@ h1 {
   display: grid;
   grid-template-columns: 220px minmax(0, 1fr);
   gap: 22px;
-  padding: 22px 24px;
+  padding: 18px 22px;
   background: #fff;
 }
 
