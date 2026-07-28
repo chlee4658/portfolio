@@ -342,7 +342,7 @@ h1 {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 16px;
 }
 
@@ -373,6 +373,17 @@ h1 {
 
 .crm-card .project-visual {
   background: linear-gradient(135deg, #20242b, #2f654d);
+}
+
+.facemap-card .project-visual {
+  background: #eef4f3;
+}
+
+.facemap-card .project-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 36% 50%;
 }
 
 .bar,

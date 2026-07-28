@@ -36,6 +36,8 @@ Then open `http://localhost:4173`.
 │       ├── skincarechart.md
 │       ├── skmsg.html
 │       ├── skmsg.md
+│       ├── facemap.html
+│       ├── facemap.md
 │       ├── telegram-crm-bridge.html
 │       └── telegram-crm-bridge.md
 ├── resumes/
@@ -57,13 +59,15 @@ The site presents an iterative healthcare technology journey:
 4. **Skmsg** was built to automate appointment messaging and patient communication workflows.
 5. Daily operations then revealed the need for a faster staff-facing interface.
 6. **Telegram CRM Bridge** was built for controlled staff lookup and approved message workflows.
-7. Together, the projects show physician experience translated into Clinical Informatics, workflow analysis, healthcare technology implementation, deployment, and iteration.
+7. **Facemap** was built as a browser-based visual anatomy overlay for consultation and documentation support.
+8. Together, the projects show physician experience translated into Clinical Informatics, workflow analysis, healthcare technology implementation, deployment, and iteration.
 
 ## Featured Projects
 
 - **SKChart** - Local-first clinical documentation and healthcare workflow platform.
 - **Skmsg** - Messaging automation for appointment communication and reminders.
 - **Telegram CRM Bridge** - Staff-facing operational assistant with controlled messaging workflows.
+- **Facemap** - Browser-based facial anatomy overlay for consultation visuals and documentation support.
 
 Each project is presented using a recruiter-friendly structure:
 

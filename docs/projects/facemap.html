@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facemap Case Study | Chaehyeok Lee</title>
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body class="case-study-page">
+    <header class="case-header">
+      <a class="case-back" href="../../index.html#projects">Back to Portfolio</a>
+      <nav>
+        <a href="telegram-crm-bridge.html">Previous</a>
+        <a href="skincarechart.html">Next</a>
+      </nav>
+    </header>
+
+    <main class="case-study">
+      <section class="case-hero compact-case-hero">
+        <p class="eyebrow">Visual Documentation / Consultation Support</p>
+        <h1>Facemap</h1>
+        <p class="case-lede">A browser-based facial anatomy overlay tool built to support clearer aesthetic consultation visuals and clinical documentation.</p>
+        <div class="case-meta">
+          <span>Facial landmarks</span>
+          <span>SVG anatomy overlay</span>
+          <span>Browser-side processing</span>
+          <span>Documentation support</span>
+        </div>
+      </section>
+
+      <section class="case-flow" aria-label="Case study flow">
+        <article><span>Problem</span><p>Facial anatomy is hard to explain with words alone.</p></article>
+        <article><span>Design</span><p>Use visible landmarks to align a non-diagnostic anatomy reference.</p></article>
+        <article><span>Built</span><p>Upload, landmark mapping, muscle overlay controls, and PNG export.</p></article>
+        <article><span>Next</span><p>Multiview capture and 2.5D anchor refinement.</p></article>
+      </section>
+
+      <section class="case-grid-detail">
+        <article>
+          <h2>Clinical Problem</h2>
+          <p>Consultations often require explaining facial regions, muscle names, and treatment context. A plain photo or verbal explanation can be difficult to review later.</p>
+        </article>
+        <article>
+          <h2>Solution</h2>
+          <p>I built a visual reference tool that overlays estimated facial muscle regions on a front-facing photo for consultation and documentation support.</p>
+        </article>
+        <article>
+          <h2>My Role</h2>
+          <p>Physician workflow analyst, anatomy model designer, frontend builder, and implementation tester.</p>
+        </article>
+        <article>
+          <h2>Key Features</h2>
+          <ul>
+            <li>Front photo upload with browser-based face landmark detection</li>
+            <li>Semantic landmark mapping and anatomical anchor estimation</li>
+            <li>SVG facial muscle overlay with opacity, scale, and offset controls</li>
+            <li>Muscle on/off controls, debug views, and PNG export</li>
+          </ul>
+        </article>
+        <article>
+          <h2>Technology Used</h2>
+          <p>Next.js, React, TypeScript, MediaPipe Face Landmarker, SVG overlays, canvas export, Tailwind CSS, Cloudflare/Vinext tooling.</p>
+        </article>
+        <article>
+          <h2>Privacy Design</h2>
+          <p>The MVP runs image analysis in the browser and does not upload or permanently store photos. Public portfolio images use non-patient demo visuals only.</p>
+        </article>
+        <article>
+          <h2>What I Learned</h2>
+          <p>Visual clinical tools need clear limits, adjustable overlays, transparent assumptions, and workflow fit before adding more complex 3D reconstruction.</p>
+        </article>
+        <article>
+          <h2>Important Limitation</h2>
+          <p>Facemap is not a diagnostic tool and does not determine treatment or injection locations. Overlay output is an educational reference that requires clinical judgment.</p>
+        </article>
+        <article class="case-image-card">
+          <h2>Screenshot</h2>
+          <p>Sanitized demo image only. No patient data, credentials, or private clinic information.</p>
+          <img class="case-screenshot" src="../../assets/facemap-consultation.png" alt="Facemap consultation preview screenshot" />
+        </article>
+      </section>
+
+      <section class="next-case">
+        <div>
+          <h2>Next Evolution</h2>
+          <p>Expand from front-only overlay toward multiview 2.5D anchors using 45-degree and profile photos.</p>
+        </div>
+        <a href="../../index.html#projects">Back to projects</a>
+      </section>
+    </main>
+  </body>
+</html>
