@@ -25,7 +25,7 @@
     .app-top{display:flex;align-items:flex-start;gap:22px}
     .app-icon{flex:none;width:96px;height:96px;border-radius:22px;display:grid;place-items:center;font-weight:800;letter-spacing:-.055em}
     .app-icon.clinside{background:linear-gradient(145deg,#0d8985,#0e484a);color:white;font-size:18px}
-    .app-icon.jethedr{background:linear-gradient(145deg,#e3f2ed,#bcdfd1);color:#167961;font-size:38px}
+    .app-icon.jethedr{width:166px;background:#f1f7fa;border:1px solid #dceaf1;padding:13px}.app-icon.jethedr img{display:block;width:100%;height:auto;max-height:100%;object-fit:contain}
     .app-icon.bzcard{background:linear-gradient(145deg,#f5effa,#ddcce8);color:#654b8d}
     .app-icon.bzcard svg{width:51px;height:51px}
     .app-information{min-width:0;flex:1}
@@ -42,7 +42,7 @@
     .apps-footer{border-top:1px solid var(--line);padding:28px 20px;text-align:center;font-size:13px;color:var(--muted)}
     .apps-footer a{color:var(--teal);font-weight:750}
     @media(max-width:830px){.apps-grid{grid-template-columns:1fr}.app-item{min-height:205px}}
-    @media(max-width:600px){.apps-nav{padding:15px 20px;align-items:flex-start;flex-direction:column;gap:10px}.apps-nav nav{gap:16px;row-gap:0}.apps-nav nav a{font-size:12px;padding:10px 0}.apps-main{width:calc(100% - 36px);padding:47px 0 60px}.apps-lead{margin-bottom:32px}.app-item{padding:19px;border-radius:16px}.app-top{gap:15px}.app-icon{width:72px;height:72px;border-radius:17px}.app-icon.clinside{font-size:13px}.app-icon.jethedr{font-size:31px}.app-icon.bzcard svg{width:40px;height:40px}.app-information h2{font-size:21px}.app-information p{font-size:13px}.app-tags{margin-top:12px}.app-bottom{padding-top:22px}}
+    @media(max-width:600px){.apps-nav{padding:15px 20px;align-items:flex-start;flex-direction:column;gap:10px}.apps-nav nav{gap:16px;row-gap:0}.apps-nav nav a{font-size:12px;padding:10px 0}.apps-main{width:calc(100% - 36px);padding:47px 0 60px}.apps-lead{margin-bottom:32px}.app-item{padding:19px;border-radius:16px}.app-top{gap:15px}.app-icon{width:72px;height:72px;border-radius:17px}.app-icon.clinside{font-size:13px}.app-icon.jethedr{width:126px;padding:9px}.app-icon.bzcard svg{width:40px;height:40px}.app-information h2{font-size:21px}.app-information p{font-size:13px}.app-tags{margin-top:12px}.app-bottom{padding-top:22px}}
     @media(prefers-reduced-motion:no-preference){.app-item{transition:box-shadow .18s,transform .18s}.app-item:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(20,30,36,.075)}}
   </style>
 </head>
@@ -81,7 +81,7 @@
     </article>
     <article class="app-item">
       <div class="app-top">
-        <div class="app-icon jethedr" aria-hidden="true">JE</div>
+        <div class="app-icon jethedr"><img src="assets/jethedr-logo.svg" alt="JE The Dr logo" width="850" height="113"></div>
         <div class="app-information">
           <h2>JE The Dr</h2>
           <p>Growth and immunization tools for healthcare professionals and families.</p>
