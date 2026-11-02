@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Apps and web tools built by Chaehyeok (Jay C.) Lee, including ClinSide and JE The Dr.">
+  <title>Apps | Chaehyeok Lee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .apps-page{min-height:100vh;background:var(--paper)}
+    .apps-nav{position:relative;min-height:70px;display:flex;align-items:center;justify-content:space-between;padding:0 var(--page-pad);background:#20272a;color:#fff}
+    .apps-nav .apps-brand{position:static;width:auto;height:auto;overflow:visible;clip:auto;font-weight:800;font-size:16px}
+    .apps-nav nav{display:flex;gap:clamp(12px,2.5vw,30px);align-items:center;flex-wrap:wrap}
+    .apps-nav nav a{font-size:13px;font-weight:700}
+    .apps-nav nav a[aria-current="page"]{color:#f5c65e}
+    .apps-main{max-width:1180px;margin:0 auto;padding:76px 24px 100px}
+    .apps-kicker{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);margin:0 0 12px}
+    .apps-title{font-size:clamp(42px,6vw,70px);letter-spacing:-.045em;line-height:1.02;white-space:normal;margin:0}
+    .apps-lead{max-width:650px;color:var(--muted);font-size:17px;line-height:1.65;margin:22px 0 42px}
+    .apps-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+    .app-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 8px 24px rgba(24,30,38,.06)}
+    .app-banner{min-height:175px;display:flex;align-items:center;justify-content:center;padding:28px;color:#fff;background:linear-gradient(125deg,#202a31,#097b77)}
+    .app-banner.web{background:linear-gradient(125deg,#202a31,#3e6359)}
+    .app-wordmark{font-size:clamp(30px,4vw,46px);font-weight:700;letter-spacing:-.055em}
+    .app-content{padding:28px;display:flex;flex-direction:column;flex:1}
+    .app-type{font-size:12px;font-weight:800;color:var(--teal);text-transform:uppercase;letter-spacing:.07em}
+    .app-content h2{font-size:27px;line-height:1.15;margin:12px 0}
+    .app-content p{margin:0 0 20px;line-height:1.65;color:var(--muted)}
+    .app-tags{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 26px}
+    .app-tags span{padding:6px 10px;border-radius:30px;background:#f1f4f4;color:#425157;font-size:12px;font-weight:700}
+    .app-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto}
+    .app-button{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:10px 15px;border:1px solid var(--teal);border-radius:6px;color:white;background:var(--teal);font-size:14px;font-weight:800}
+    .app-button.outline{background:#fff;color:var(--teal)}
+    .app-note{font-size:12px!important;line-height:1.6!important;margin:16px 0 0!important}
+    .apps-future{margin-top:36px;padding:28px;border:1px dashed #b9c4c7;border-radius:12px;color:var(--muted)}
+    .apps-future h2{color:var(--ink);font-size:20px;margin:0 0 8px}
+    .apps-future p{margin:0;line-height:1.6}
+    .apps-footer{border-top:1px solid var(--line);padding:26px 24px;text-align:center;color:var(--muted);font-size:13px}
+    .apps-footer a{color:var(--teal);font-weight:700}
+    @media(max-width:700px){.apps-nav{padding:16px 20px;align-items:flex-start;gap:16px;flex-direction:column}.apps-nav nav{gap:14px}.apps-main{padding:50px 20px 75px}.apps-grid{grid-template-columns:1fr}.app-banner{min-height:140px}.app-content{padding:22px}}
+  </style>
+</head>
+<body class="apps-page">
+  <header class="apps-nav">
+    <a class="apps-brand" href="../">Chaehyeok Lee</a>
+    <nav aria-label="Primary navigation">
+      <a href="../">Home</a>
+      <a href="../#projects">Projects</a>
+      <a href="./" aria-current="page">Apps</a>
+      <a href="../#experience">Experience</a>
+      <a href="../resume.html">Resume</a>
+      <a href="../#contact">Contact</a>
+    </nav>
+  </header>
+  <main class="apps-main">
+    <p class="apps-kicker">Software &amp; Digital Health</p>
+    <h1 class="apps-title">Apps &amp; Tools</h1>
+    <p class="apps-lead">Practical software and online tools developed from clinical practice and real-world workflow needs.</p>
+    <section class="apps-grid" aria-label="Available projects">
+      <article class="app-card">
+        <div class="app-banner"><div class="app-wordmark">ClinSide</div></div>
+        <div class="app-content">
+          <span class="app-type">Desktop application</span>
+          <h2>ClinSide</h2>
+          <p>A portable clinical support platform for day-to-day healthcare workflows. Designed to run alongside an existing EMR.</p>
+          <div class="app-tags"><span>Windows</span><span>Portable</span><span>Clinical workflow</span></div>
+          <div class="app-actions">
+            <a class="app-button" href="https://github.com/chlee4658/clinside/releases" rel="noopener noreferrer" target="_blank">View downloads ↗</a>
+            <a class="app-button outline" href="https://github.com/chlee4658/clinside" rel="noopener noreferrer" target="_blank">Source repository ↗</a>
+          </div>
+          <p class="app-note">Downloadable builds will be available on GitHub Releases when published. For clinical assistance only; not a substitute for professional judgment.</p>
+        </div>
+      </article>
+      <article class="app-card">
+        <div class="app-banner web"><div class="app-wordmark">JE The Dr</div></div>
+        <div class="app-content">
+          <span class="app-type">Web application</span>
+          <h2>JE The Dr</h2>
+          <p>Online clinical tools and resources, including growth and immunization-related utilities. No installation required.</p>
+          <div class="app-tags"><span>Web</span><span>Growth</span><span>Immunization</span></div>
+          <div class="app-actions">
+            <a class="app-button" href="https://jethedr.com/" rel="noopener noreferrer" target="_blank">Open web app ↗</a>
+          </div>
+          <p class="app-note">Opens in a new tab.</p>
+        </div>
+      </article>
+    </section>
+    <section class="apps-future">
+      <h2>More apps coming soon</h2>
+      <p>New desktop applications and browser-based tools will be added to this page as they become available.</p>
+    </section>
+  </main>
+  <footer class="apps-footer">© Chaehyeok Lee · <a href="../">Back to portfolio</a></footer>
+</body>
+</html>
